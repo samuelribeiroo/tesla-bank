@@ -1,3 +1,5 @@
+@import url("./breakpoints.css");
+
 *,
 *::after,
 *::before {
@@ -16,7 +18,7 @@
   --fontInter: "Inter";
   --fontSora: "Sora";
 
-  
+  --paddingPattern: 4px; /* 4px -> isso aq vai ser alterado */
 }
 
 html {
@@ -24,4 +26,68 @@ html {
   image-rendering: optimizeQuality;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 120rem;
+  padding: 0;
+  height: 6rem;
+  background: silver;
+  padding: var(--paddingPattern);
+}
+
+.nav {
+  margin: 0 auto;
+}
+
+.nav img {
+  margin-right: 64px;
+}
+
+.nav,
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  color: var(--dark-10);
+  list-style: none;
+}
+
+.nav ul li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.nav ul li:not(:first-child) {
+  padding-left: 1px;
+}
+
+.nav ul li img {
+  margin-left: 8px;
+}
+
+.login-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 2.5rem;
+}
+
+.nav ul li p,
+.login-box p {
+  cursor: pointer;
+  font-family: var(--fontInter);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.login-box p {
+  color: var(--white);
 }
