@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: #e51d37;
+  --dark-10: #333333;
+  --dark-20: #646466;
+  --dark-30: #f2f4fd;
+  --white: #ffffff;
+
+  --fontInter: "Inter";
+  --fontSora: "Sora";
+
+  
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  image-rendering: optimizeQuality;
+  max-width: 100%;
+  overflow-x: hidden;
+}
