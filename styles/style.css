@@ -14,6 +14,7 @@
   --dark-20: #646466;
   --dark-30: #f2f4fd;
   --white: #ffffff;
+  --grey-10: rgba(242, 244, 253, 1);
 
   --fontInter: "Inter";
   --fontSora: "Sora";
@@ -24,8 +25,22 @@
 html {
   text-rendering: optimizeLegibility;
   image-rendering: optimizeQuality;
+  scroll-behavior: smooth;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+body {
+  background-color: var(--grey-10);
+}
+
+.header-component {
+  width: 100%;
+  position: fixed;
+}
+
+.change-bg {
+  background-color: var(--brand-color);
 }
 
 .header {
@@ -34,8 +49,7 @@ html {
   justify-content: space-between;
   max-width: 120rem;
   padding: 0;
-  height: 6rem;
-  background: silver;
+  height: 4.5rem;
   padding: var(--paddingPattern);
 }
 
@@ -43,8 +57,14 @@ html {
   margin: 0 auto;
 }
 
-.nav img {
+.logo,
+.logo2 {
   margin-right: 64px;
+}
+
+.logo2,
+.arrow-down {
+  display: none;
 }
 
 .nav,
@@ -66,18 +86,19 @@ html {
 }
 
 .nav ul li:not(:first-child) {
-  padding-left: 1px;
+  padding-left: 25px;
 }
 
 .nav ul li img {
-  margin-left: 8px;
+  margin-left: 6px;
+  cursor: pointer;
 }
 
 .login-box {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  margin-right: 2.5rem;
+  margin-right: 7.5rem;
 }
 
 .nav ul li p,
@@ -90,4 +111,8 @@ html {
 
 .login-box p {
   color: var(--white);
+}
+
+.menu-hamburger {
+  display: none;
 }

@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px) {
+  .header {
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .login-box,
+  .nav ul li {
+    display: none;
+  }
+
+  .menu-hamburger {
+    cursor: pointer;
+    display: flex;
+    margin-left: 450%;
+  }
+}
