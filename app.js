@@ -1,3 +1,5 @@
+"use strict";
+
 const header = document.querySelector(".header");
 const navText = document.querySelectorAll(".nav-text");
 const logo = document.querySelector(".logo");
@@ -7,13 +9,18 @@ const arrowDown = document.querySelectorAll(".arrow-down");
 const openBtn = document.querySelector(".click");
 const modalContainer = document.querySelector(".modal-container");
 const closeBtn = document.querySelector(".modal-btn");
+const modal = document.querySelector("modal");
 const numPx = 250;
 
 window.addEventListener("scroll", changeHeaderStyle);
 
+const openModal = () => modalContainer.classList.add("show");
+
+const closeModal = () => modalContainer.classList.remove("show");
+
 openBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
-modalContainer.addEventListener("click", closeModal);
+modalContainer.addEventListener("click", handleClickOutsides);
 
 function changeHeaderStyle() {
   const screenSize = window.scrollY > numPx;
@@ -53,10 +60,10 @@ function changeHeaderStyle() {
   }
 }
 
-function openModal() {
-  modalContainer.classList.add("show");
-}
+function handleClickOutsides(event) {
+  let isVisible = event.target == modalContainer;
 
-function closeModal() {
-  modalContainer.classList.remove("show");
+  if (isVisible) {
+    modalContainer.classList.remove("show");
+  }
 }
