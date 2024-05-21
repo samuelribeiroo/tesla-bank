@@ -13,6 +13,7 @@ window.addEventListener("scroll", changeHeaderStyle);
 
 openBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
+modalContainer.addEventListener("click", closeModal);
 
 function changeHeaderStyle() {
   const screenSize = window.scrollY > numPx;
