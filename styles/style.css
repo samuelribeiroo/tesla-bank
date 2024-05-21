@@ -179,6 +179,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 200px;
+  max-width: 100%;
 }
 
 .text-box h3 {
@@ -207,7 +208,8 @@ body {
   height: 250px;
 }
 
-.img-box img:hover {
+.img-box img:hover,
+.modal-btn:hover {
   transition: all ease-in-out 5ms;
   filter: brightness(0.8);
 }
@@ -258,4 +260,75 @@ body {
 
 .footer div span img {
   margin-right: 50px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px 50px;
+  width: 700px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.modal label {
+  font-size: 0.956rem;
+  font-family: var(--fontSora);
+  color: var(--dark-10);
+  margin-bottom: -12px;
+}
+
+.modal input {
+  padding: 10px;
+  max-width: 608px;
+  height: 56px;
+  border-radius: 6px;
+  outline: 1px solid var(--dark-20);
+  border: none;
+  font-size: 0.956rem;
+  font-family: var(--fontSora);
+  color: var(--dark-10);
+}
+
+.modal input:focus {
+  outline: 1px solid red;
+}
+
+.modal-btn {
+  width: 128px;
+  border: none;
+  cursor: pointer;
+  outline: 1px solid var(--dark-20);
+  padding: 20px;
+  background-color: var(--brand-color);
+  font-size: 0.956rem;
+  font-family: var(--fontSora);
+  border-radius: 4.5px;
+  color: var(--dark-30);
+  outline: none;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
 }
