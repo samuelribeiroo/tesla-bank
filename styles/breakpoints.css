@@ -1,7 +1,4 @@
 @media screen and (max-width: 800px) {
-  .header {
-  }
-
   .nav {
     display: flex;
     justify-content: space-between;
@@ -13,8 +10,7 @@
   }
 
   .logo2 {
-    display: flex;
-    margin: 0 auto;
+    display: block;
   }
 
   .login-box,
@@ -25,6 +21,37 @@
   .menu-hamburger {
     cursor: pointer;
     display: flex;
-    margin-left: 450%;
+    margin-left: 572px;
+  }
+
+  .mobile-hero {
+    padding: 0.9rem;
+  }
+
+  .mobile-hero {
+    margin-top: 60px;
+    margin-left: 17%;
+  }
+
+  .mobile-hero img {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .hero-heading {
+    font-size: 1.986rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .pre-component {
+    display: flex;
+  }
+
+  .hero-btn img {
+    margin-left: 14px;
+    margin-top: -3px;
   }
 }

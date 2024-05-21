@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: var(--grey-10);
+  background-color: white;
 }
 
 .header-component {
@@ -115,4 +115,62 @@ body {
 
 .menu-hamburger {
   display: none;
+}
+
+.pre-component {
+  display: none;
+  width: 800px;
+  height: 885px;
+  background-color: var(--brand-color);
+}
+
+.hero-heading {
+  font-family: var(--fontInter), sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--dark-30);
+}
+
+.second {
+  margin-top: 2px;
+}
+
+.text {
+  font-family: var(--fontInter);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-30);
+  margin-top: 18px;
+}
+
+.mobile-hero,
+.hero-text {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  padding: 14px;
+}
+.hero-text {
+  margin-top: 2.5rem;
+}
+
+.hero-btn {
+  margin-top: 1.5rem;
+  width: 274px;
+  height: 64px;
+  background-color: var(--dark-30);
+  font-family: var(--fontInter);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark-10);
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn img {
+  line-height: 0;
+  margin-left: 12px;
 }
