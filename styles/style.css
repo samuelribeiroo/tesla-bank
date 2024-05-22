@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: var(--dark-30);
 }
 
 .header-component {
@@ -337,4 +337,45 @@ body {
 .show {
   opacity: 1;
   pointer-events: auto;
+}
+
+.dropbtn {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  padding: 13px;
+  width: 150px;
+  max-height: 175px;
+  display: none;
+  position: absolute;
+  background-color: var(--dark-30);
+  border: 1px solid var(--dark-10);
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  font-family: var(--fontInter);
+  margin-top: 9px;
+  font-weight: 500;
+  font-size: 0.986rem;
+  color: var(--dark-10);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  transition: all ease-in-out 5ms;
+  text-decoration: underline 2.5px var(--brand-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
