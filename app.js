@@ -1,5 +1,3 @@
-"use strict";
-
 const header = document.querySelector(".header");
 const navText = document.querySelectorAll(".nav-text");
 const logo = document.querySelector(".logo");
@@ -11,6 +9,10 @@ const modalContainer = document.querySelector(".modal-container");
 const closeBtn = document.querySelector(".modal-btn");
 const modal = document.querySelector("modal");
 const numPx = 250;
+const inputEmail = document.querySelector(".email-input");
+const passwordInput = document.querySelector(".password-input");
+const formBtn = document.querySelector(".login");
+const errorSmall = document.querySelectorAll(".error");
 
 window.addEventListener("scroll", changeHeaderStyle);
 
@@ -21,6 +23,7 @@ const closeModal = () => modalContainer.classList.remove("show");
 openBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
 modalContainer.addEventListener("click", handleClickOutsides);
+formBtn.addEventListener("click", handleEmptyInput);
 
 function changeHeaderStyle() {
   const screenSize = window.scrollY > numPx;
@@ -65,5 +68,13 @@ function handleClickOutsides(event) {
 
   if (isVisible) {
     modalContainer.classList.remove("show");
+  }
+}
+
+function handleEmptyInput() {
+  const isEmpty = inputEmail.value === "" || passwordInput.value === "";
+
+  if (isEmpty) {
+    errorSmall.forEach(msg => msg.style.display = "inline-block");
   }
 }

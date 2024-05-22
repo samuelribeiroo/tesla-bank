@@ -334,6 +334,15 @@ body {
   outline: none;
 }
 
+.btn-box {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.login {
+  background-color: #40c057;
+}
+
 .show {
   opacity: 1;
   pointer-events: auto;
@@ -378,4 +387,12 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.error {
+  display: none;
+  font-family: var(--fontInter);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--brand-color);
 }
