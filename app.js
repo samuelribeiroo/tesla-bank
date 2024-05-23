@@ -13,6 +13,7 @@ const inputEmail = document.querySelector(".email-input");
 const passwordInput = document.querySelector(".password-input");
 const formBtn = document.querySelector(".login");
 const errorSmall = document.querySelectorAll(".error");
+const acc = document.querySelectorAll(".accordion");
 
 window.addEventListener("scroll", changeHeaderStyle);
 
@@ -24,6 +25,14 @@ openBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
 modalContainer.addEventListener("click", handleClickOutsides);
 formBtn.addEventListener("click", handleEmptyInput);
+
+acc.forEach((element) => {
+  element.addEventListener("click", showAccordion);
+});
+
+acc.forEach(element => {
+  element.addEventListener('dblclick', hideAccordion)
+})
 
 function changeHeaderStyle() {
   const screenSize = window.scrollY > numPx;
@@ -72,9 +81,21 @@ function handleClickOutsides(event) {
 }
 
 function handleEmptyInput() {
-  const isEmpty = inputEmail.value === "" || passwordInput.value === "";
+  const isEmpty = inputEmail.value === "" && passwordInput.value === "";
 
   if (isEmpty) {
-    errorSmall.forEach(msg => msg.style.display = "inline-block");
+    errorSmall.forEach((msg) => (msg.style.display = "inline-block"));
+  } else if (!isEmpty) {
+    errorSmall.forEach((msg) => (msg.style.display = "none"));
   }
+}
+
+function showAccordion(event) {
+  let label = event.target.parentElement.querySelector(".label");
+  label.style.display = "block";
+}
+
+function hideAccordion(event) {
+  let label = event.target.parentElement.querySelector(".label");
+  label.style.display = "none";  
 }
