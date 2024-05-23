@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/breakpoints.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -109,6 +109,65 @@
     </div>
   </section>
 
+  <section class="modal-container" id='overlay'>
+    <div class="modal">
+      <h1>Faça Login</h1>
+      <label for="event-title">E-mail</label>
+      <input type="email" required class="email-input" placeholder="Login">
+      <small class="error">Campo vazio, por favor preencha.</small>
+      <label for="event-title">Senha</label>
+      <input type="password" required class="password-input" placeholder="Senha">
+      <small class="error">Campo vazio, por favor preencha.</small>
+      <div class="btn-box">
+        <button class="modal-btn">Fechar</button>
+        <button type="submit" class="modal-btn login">Entrar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="accordion-component">
+    <div class="accordion-text">
+      <h3>#AJUDA</h3>
+      <h1>Ficou alguma dúvida?</h1>
+      <p>Nullam ornare eu nisi fringilla consectetur. Suspendisse potenti. </p>
+    </div>
+    <section class="cards-accordion">
+      <span>
+        <img src="./assets/smartphone.svg" alt="" srcset="">
+        <div class="card-text">
+          <h2>Quanto rende meu dinheiro?</h2>
+          <p>Descubra o rendimento potencial do seu dinheiro conosco.</p>
+          <p class="label">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <img src="./assets/arrow.svg" alt="" class="accordion" srcset="">
+      </span>
+
+      <span>
+        <img src="./assets/smartphone.svg" alt="" srcset="">
+        <div class="card-text">
+          <h2>Quanto rende meu dinheiro?</h2>
+          <p>Descubra o rendimento potencial do seu dinheiro conosco.</p>
+          <p class="label">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <img src="./assets/arrow.svg" alt="" class="accordion" srcset="">
+      </span>
+
+      <span>
+        <img src="./assets/smartphone.svg" alt="" srcset="">
+        <div class="card-text">
+          <h2>Quanto rende meu dinheiro?</h2>
+          <p>Descubra o rendimento potencial do seu dinheiro conosco.</p>
+          <p class="label">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <img src="./assets/arrow.svg" alt="" class="accordion" srcset="">
+      </span>
+    </section>
+  </section>
+
+
+
+
+
   <footer class="footer">
     <div>
       <p>Copyright © 2024. Todos os direitos reservados.</p>
@@ -118,21 +177,6 @@
       </span>
     </div>
   </footer>
-
-
-  <section class="modal-container" id='overlay'>
-    <div class="modal">
-      <h1>Faça Login</h1>
-      <label for="event-title">E-mail</label>
-      <input type="email" placeholder="Login">
-      <label for="event-title">Senha</label>
-      <input type="password" placeholder="Senha">
-      <button class="modal-btn">Fechar</button>
-    </div>
-  </section>
-
-
-
 </body>
 <script type="module" src="./app.js"></script>
 

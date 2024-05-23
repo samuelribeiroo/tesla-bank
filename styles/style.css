@@ -210,7 +210,8 @@ body {
 }
 
 .img-box img:hover,
-.modal-btn:hover {
+.modal-btn:hover,
+.accordion-togle:hover {
   transition: all ease-in-out 5ms;
   filter: brightness(0.8);
 }
@@ -395,4 +396,87 @@ body {
   font-size: 12px;
   font-weight: 400;
   color: var(--brand-color);
+}
+
+.accordion-component {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.accordion-text {
+  text-align: center;
+}
+
+.accordion-component h3 {
+  color: var(--brand-color);
+  margin-bottom: 25px;
+}
+
+.accordion-component h1 {
+  font-family: var(--fontInter);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.accordion-component p,
+.accordion-component h3 {
+  font-family: var(--fontInter);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.accordion-component p {
+  color: var(--dark-10);
+  margin-top: 25px;
+  margin-bottom: 1.5rem;
+}
+
+.cards-accordion {
+  display: flex;
+  flex-direction: column;
+  place-items: left;
+  gap: 4.5rem;
+  padding: 1rem;
+}
+
+.cards-accordion span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 768px;
+  height: 60px;
+  padding: 29px;
+  margin-top: 1.5rem;
+}
+
+.card-text h2 {
+  margin-top: 12px;
+  font-family: var(--fontInter);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cards-accordion span p {
+  font-family: var(--fontInter);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 19px;
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+.label {
+  font-size: 14px !important;
+  color: red;
+  display: none;
 }
