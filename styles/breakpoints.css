@@ -75,4 +75,24 @@
     width: 175px;
     height: 175px;
   }
+
+  .cards-accordion span {
+    max-width: 680px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials-component {
+    margin-left: 20px;
+  }
+
+  .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .cards-accordion {
+    width: 490px;
+  }
 }
