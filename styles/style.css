@@ -15,6 +15,7 @@
   --dark-30: #f2f4fd;
   --white: #ffffff;
   --grey-10: rgba(242, 244, 253, 1);
+  --green-button: #40c057;
 
   --fontInter: "Inter";
   --fontSora: "Sora";
@@ -115,6 +116,81 @@ body {
 
 .menu-hamburger {
   display: none;
+}
+
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+  padding: 190px;
+  max-width: 100%;
+  background-image: url("../assets/Vector\ 1113.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.img-section img {
+  margin-right: -150px;
+  margin-top: -225px;
+}
+
+.first-text {
+  margin-bottom: 390px;
+}
+
+.first-text h2 {
+  font-family: var(--fontInter);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--brand-color);
+  line-height: 50px;
+}
+
+.first-text p {
+  font-family: var(--fontInter);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--dark-10);
+  line-height: 25px;
+  margin-top: 1.5rem;
+}
+
+.buttons-first {
+  margin-top: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons-first button {
+  border-radius: 3.5px;
+  text-align: center;
+  width: 210px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border: none;
+  background-color: var(--brand-color);
+}
+
+.buttons-first a {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: var(--fontInter);
+  font-weight: 500;
+  color: var(--dark-30);
+  text-decoration: none;
+}
+
+.buttons-first a img {
+  margin-bottom: -4px;
+}
+
+.buttons-first img {
+  cursor: pointer;
 }
 
 .pre-component {
@@ -485,6 +561,7 @@ body {
 
 .testimonials-component {
   padding: 1rem;
+  margin: 50px;
 }
 
 .testimonial-text {

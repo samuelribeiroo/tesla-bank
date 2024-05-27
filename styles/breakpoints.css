@@ -79,6 +79,10 @@
   .cards-accordion span {
     max-width: 680px;
   }
+
+  .first-section {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -94,5 +98,9 @@
 
   .cards-accordion {
     width: 490px;
+  }
+
+  .first-section {
+    display: none;
   }
 }
