@@ -118,6 +118,10 @@ body {
   display: none;
 }
 
+.main-component {
+  margin: 0px 28px;
+}
+
 .first-section {
   display: flex;
   align-items: center;
@@ -189,15 +193,13 @@ body {
   margin-bottom: -4px;
 }
 
-.buttons-first img {
-  cursor: pointer;
-}
-
 .buttons-first button:hover {
   filter: opacity(1.2);
 }
 
-.buttons-first img:hover {
+.buttons-first img:hover,
+.icon-item:hover {
+  cursor: pointer;
   transform: scale(1.4);
   transition: 150ms ease-in-out;
 }
@@ -617,4 +619,55 @@ body {
   font-family: var(--fontInter);
   font-size: 18px;
   font-weight: 400;
+}
+
+.offer-component {
+  margin-top: -290px;
+}
+
+.offer-text {
+  font-family: var(--fontInter);
+  color: var(--dark-10);
+  margin-bottom: 2rem;
+}
+
+.offer-text h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.offer-text h1 span {
+  color: var(--brand-color);
+}
+
+.offer-component {
+  padding: 1.5rem;
+}
+
+.offer-text p {
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.benefits {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 4rem;
+  list-style: none;
+  font-family: var(--fontInter);
+  color: var(--dark-10);
+}
+
+.benefits img {
+  margin-right: 1.5rem;
+}
+
+.benefits-item {
+  display: flex;
+}
+
+.benefits-item span h4 {
+  margin-bottom: 0.9rem;
 }
