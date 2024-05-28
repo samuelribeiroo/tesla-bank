@@ -83,9 +83,28 @@
   .first-section {
     display: none;
   }
+  .footer {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer div {
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .cards-accordion span {
+    padding: 1rem;
+    width: 500px;
+    order: 1px solid red;
+  }
+
+  .cellphone-svg {
+    display: none;
+  }
+
   .testimonials-component {
     margin-left: 20px;
   }
