@@ -126,6 +126,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .main-component {
+    margin: 0 0px;
+  }
+    
   .cards-accordion span {
     padding: 1rem;
     width: 500px;
