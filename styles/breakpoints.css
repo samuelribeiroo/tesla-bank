@@ -90,6 +90,10 @@
     height: 175px;
   }
 
+  .accordion-text {
+    margin: 0px 16px;
+  }
+
   .cards-accordion span {
     max-width: 680px;
   }
@@ -105,6 +109,19 @@
     margin: 0;
     justify-content: center;
     gap: 20px;
+  }
+
+  .details-component {
+    margin-left: 16px;
+  }
+
+  .cards-section,
+  .second-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .second-cards {
+    margin-left: 16px;
   }
 }
 
@@ -135,5 +152,10 @@
 
   .first-section {
     display: none;
+  }
+
+  .cards-section,
+  .second-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
