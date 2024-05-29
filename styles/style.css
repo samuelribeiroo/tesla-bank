@@ -607,7 +607,20 @@ body {
   gap: 14px;
 }
 
+.cards {
+  display: flex;
+}
+
+.cards::before {
+  content: "";
+  display: block;
+  background-color: var(--brand-color);
+  width: 12px;
+  height: 40px;
+}
+
 .cards h2 {
+  margin-left: 8px;
   font-family: var(--fontInter);
   font-size: 1.5rem;
   font-weight: 500;
