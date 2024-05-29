@@ -676,3 +676,63 @@ body {
 .benefits-item span h4 {
   margin-bottom: 0.9rem;
 }
+
+.details-component {
+  margin-top: 2.5rem;
+  padding: 0.9rem;
+  font-family: var(--fontInter);
+  color: var(--dark-10);
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.details-text h4 {
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  line-height: 25px;
+}
+
+.details-text h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 63px;
+}
+
+.details-text h1 span {
+  color: var(--brand-color);
+}
+
+.card-details {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 1.5rem;
+  width: 280px;
+  height: 296px;
+  background-color: var(--dark-30);
+  border-radius: 4.5px;
+}
+
+.card-details a {
+  font-weight: 600;
+  line-height: 19px;
+  text-decoration: underline;
+  color: var(--brand-color);
+}
+
+.second-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 210px;
+}
+
+.second-cards {
+  font-family: var(--fontInter);
+  color: var(--dark-10);
+}
