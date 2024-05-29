@@ -214,7 +214,7 @@ body {
 .hero-heading {
   font-family: var(--fontInter), sans-serif;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 64px;
   color: var(--dark-30);
 }
 
@@ -622,6 +622,11 @@ body {
 }
 
 .offer-component {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: url("../assets/Vector\ 1113.svg");
+  background-repeat: no-repeat;
+  background-position: top;
   margin-top: -290px;
 }
 

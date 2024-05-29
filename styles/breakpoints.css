@@ -1,4 +1,8 @@
 @media screen and (max-width: 768px) {
+  .main-component {
+    margin: 0 0px;
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -49,6 +53,16 @@
 
   .pre-component {
     display: flex;
+    margin: 0 !important;
+  }
+
+  .offer-component {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .hero-img {
+    display: none;
   }
 
   .hero-btn img {
