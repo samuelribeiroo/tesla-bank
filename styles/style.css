@@ -37,6 +37,7 @@ body {
 
 .header-component {
   width: 100%;
+  max-width: 2700px;
   position: fixed;
 }
 
@@ -52,6 +53,8 @@ body {
   padding: 0;
   height: 4.5rem;
   padding: var(--paddingPattern);
+  width: 100%;
+  max-width: 2700px;
 }
 
 .nav {
@@ -119,6 +122,8 @@ body {
 }
 
 .main-component {
+  width: 100%;
+  max-width: 1216px;
   margin: 0px 28px;
 }
 
@@ -208,7 +213,7 @@ body {
   display: none;
   width: 800px;
   height: 885px;
-  background-color: var(--brand-color);
+  /* background-color: var(--brand-color); */
 }
 
 .hero-heading {
@@ -748,4 +753,79 @@ body {
 .second-cards {
   font-family: var(--fontInter);
   color: var(--dark-10);
+}
+
+.mobile-hero-section {
+  /* width: 100%;
+  max-width: 1216px; */
+  padding: 40px 24px;
+  font-family: Inter;
+}
+
+.text-wrapper, .benefit-list {
+  margin-left: 1.5rem;
+}
+
+.text-wrapper {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 2.8rem;
+}
+
+.text-wrapper span {
+  width: 100%;
+  max-width: 500px;
+  padding-right: 7rem;
+}
+
+
+.text-wrapper h1 {
+  font-size: 48px;
+  line-height: 53px;
+}
+
+.text-wrapper p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.benefit-list {
+  margin-top: 1.87rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.benefit-list li {
+  list-style: none;
+} 
+
+.list-mobile {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+}
+
+
+.cta-mobile {
+  margin-top: 2.5rem;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4.5px;
+  background-color: var(--brand-color);
+  color: var(--dark-30);
+  width: 100%;
+  max-width: 389px;
+  padding: 16px 32px;
+  cursor: pointer;
 }

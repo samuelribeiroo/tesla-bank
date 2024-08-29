@@ -1,6 +1,12 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .main-component {
     margin: 0 0px;
+  }
+
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid pur;
   }
 
   .nav {
@@ -33,14 +39,29 @@
     padding: 0.9rem;
   }
 
+  .mobile-hero-section {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 1.8rem;
+  }
+
+
   .mobile-hero {
+    width: 100%;
+    max-width: 780px;
+    margin-left: 10%;
     margin-top: 60px;
-    margin-left: 17%;
   }
 
   .mobile-hero img {
     margin-top: 1rem;
     margin-right: 0.5rem;
+  }
+
+  .card-hero-svg {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid black;
   }
 
   .hero-heading {
@@ -57,7 +78,7 @@
   }
 
   .offer-component {
-    margin-top: 50px;
+    margin-top: -250px;
     margin-left: 20px;
   }
 
@@ -101,6 +122,7 @@
   .first-section {
     display: none;
   }
+
   .footer {
     margin-bottom: 1.5rem;
   }
@@ -133,7 +155,6 @@
   .cards-accordion span {
     padding: 1rem;
     width: 500px;
-    order: 1px solid red;
   }
 
   .cellphone-svg {
